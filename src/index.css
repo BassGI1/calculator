@@ -1,4 +1,60 @@
 *{
   margin: 0;
   padding: 0;
+  color: white;
+  overflow: hidden;
+}
+
+body{
+  background-image: linear-gradient(to bottom right, black, rgb(80, 30, 30), rgb(179, 36, 36));
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+}
+
+.box1, .box2, .box3{
+  display: flex;
+  width: 8vw;
+  height: 8vw;
+  border: rgb(128, 0, 0) 2.25px solid;
+  margin: 1vw;
+  border-radius: 3vh;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 0, 0, 0);
+  cursor: pointer;
+  animation-play-state: running;
+  font-size: larger;
+}
+
+.box2{
+  width: 5vw;
+  height: 5vw;
+  border: rgb(128, 0, 0) 1.5px solid;
+  margin: 0.75vw;
+  border-radius: 1.5vh;
+}
+
+.box3{
+  width: 10vw;
+  height: 10vw;
+  border: rgb(255, 73, 73) 2.75px solid;
+  border-radius: 3.5vh;
+}
+
+.box1:hover,.box2:hover, .box3:hover{
+  animation: press 1s forwards;
+}
+
+@keyframes press{
+  100% {background-color: red;}
+}
+
+.screen{
+  display: flex;
+  height: 93.25vh;
+  width: 35vw;
+  background-color: green;
+  position: absolute;
+  left: 63vw;
+  bottom: 1.5vw;
 }
