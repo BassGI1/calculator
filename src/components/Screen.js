@@ -5,7 +5,7 @@ export default function Screen(props) {
     return (
 
         <div className="screen">
-            black
+            {props.value}
         </div>
 
     )
