@@ -1,5 +1,4 @@
-import React, {useState} from 'react'
-import Display from './components/Display.js';
+import React, {useState} from 'react';
 import Button from './components/Button.js';
 import Special from './components/Special.js';
 import Screen from './components/Screen.js';
@@ -155,7 +154,6 @@ function App() {
 
   return (
     <div>
-      <Display />
       <Button buttons={clas === 1 ? buttons1 : buttons2} type={clas} change={change}/>
       <Special buttons={specialButtons} change={change}/>
       <Screen value={`${history}\n${expression}`}/>
