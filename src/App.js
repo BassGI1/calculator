@@ -15,7 +15,7 @@ function App() {
   const [history, setHistory] = useState('')
   const [answer, setAnswer] = useState('')
 
-  function round(value, precision = 0) {
+  function round(value, precision) {
     const exponent = Math.pow(10, precision);
     return Math.round(value * exponent) / exponent;
   }
